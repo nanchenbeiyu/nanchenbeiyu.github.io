@@ -3,6 +3,10 @@
     "private": true,
     "version": "1.0.0",
     "scripts": {
-        "dev": "node server.js"
+        "dev": "vite",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "vite": "^8.2.1"
     }
 }
