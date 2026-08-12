@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nilo 的黑白童话 · 扉页</title>
+    <title>我的学习路径 · nilo 的黑白童话</title>
     <link rel="stylesheet" href="css/fairytale.css">
-    <link rel="stylesheet" href="css/invite.css">
+    <link rel="stylesheet" href="css/pages.css">
 </head>
-<body class="invite-body">
+<body>
 
-    <!-- 夜空 -->
     <div class="sky" aria-hidden="true"></div>
     <div class="moon" aria-hidden="true"></div>
 
-    <!-- 角落藤蔓 -->
     <svg class="vine vine-tl" viewBox="0 0 220 220" aria-hidden="true">
         <path d="M6 8 C 50 18, 38 66, 84 78 C 122 88, 118 128, 158 140 C 184 148, 196 168, 208 196"/>
         <ellipse class="leaf" cx="44" cy="30" rx="7" ry="3.2" transform="rotate(28 44 30)"/>
@@ -35,7 +33,6 @@
         <circle cx="158" cy="140" r="2"/>
     </svg>
 
-    <!-- 山脚剪影：松林与一只看月亮的猫 -->
     <svg class="hills" viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
         <g fill="#101015" stroke="rgba(245,242,234,0.22)" stroke-width="1.5">
             <ellipse cx="260" cy="300" rx="380" ry="150"/>
@@ -71,24 +68,62 @@
         </g>
     </svg>
 
-    <!-- 舞台 -->
-    <main class="stage">
-        <div class="portrait-frame">
-            <img src="assets/nilo-cat-bw.png" alt="nilo 的猫画像">
+    <main class="page">
+        <header class="page-head">
+            <a class="back-link" href="index.html">✦ 返回扉页</a>
+            <h1 class="page-title" data-draw="我的学习路径">我的学习路径</h1>
+            <p class="page-sub">一条还在延伸的小路 · 大学四年规划</p>
+        </header>
+
+        <div class="trail">
+            <div class="trail-item now rise">
+                <div class="card trail-card">
+                    <span class="trail-date">2025.09 — 2026.06</span>
+                    <h3>大一 · 探索期</h3>
+                    <ul>
+                        <li>目标：夯实基础，开拓视野</li>
+                        <li>技能：Python, HTML/CSS, Git</li>
+                        <li>实践：卷就完了</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="trail-item rise">
+                <div class="card trail-card">
+                    <span class="trail-date">2026.09 — 2027.06</span>
+                    <h3>大二 · 发展期</h3>
+                    <ul>
+                        <li>目标：技能深化，探索方向</li>
+                        <li>技能：Vue/React, MySQL, 数据结构与算法</li>
+                        <li>实践：开发个人项目，也许竞赛？！</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="trail-item rise">
+                <div class="card trail-card">
+                    <span class="trail-date">2027.09 — 2028.06</span>
+                    <h3>大三 · 深耕期</h3>
+                    <ul>
+                        <li>目标：聚焦方向，能力突破</li>
+                        <li>技能：后端框架（SpringBoot / Django）、云计算、分布式基础</li>
+                        <li>实践：高质量实习、参与开源项目、冲击竞赛奖项</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="trail-item rise">
+                <div class="card trail-card">
+                    <span class="trail-date">2028.09 — 2029.06</span>
+                    <h3>大四 · 冲刺期</h3>
+                    <ul>
+                        <li>目标：职业定型，成果沉淀</li>
+                        <li>技能：技术栈整合、工程化实践、面试核心能力</li>
+                        <li>实践：毕业设计、校招求职 / 考研深造、完善个人作品集</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-        <div class="invitation">
-            <div class="invite-line" id="line1"></div>
-            <div class="invite-line" id="line2"></div>
-        </div>
-
-        <p class="invite-hint" id="hint">❧ 夜色正好 · 请推开一扇门 ❧</p>
-
-        <nav class="gate" id="gate">
-            <a class="btn" href="portfolio.html">我的作品集</a>
-            <a class="btn" href="path.html">我的学习路径</a>
-            <a class="btn" href="contact.html">如何联系我</a>
-        </nav>
     </main>
 
     <footer>
@@ -99,6 +134,5 @@
     <div class="grain" aria-hidden="true"></div>
 
     <script src="js/fairytale.js"></script>
-    <script src="js/invite.js"></script>
 </body>
 </html>

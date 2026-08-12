@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nilo 的黑白童话 · 扉页</title>
+    <title>如何联系我 · nilo 的黑白童话</title>
     <link rel="stylesheet" href="css/fairytale.css">
-    <link rel="stylesheet" href="css/invite.css">
+    <link rel="stylesheet" href="css/pages.css">
 </head>
-<body class="invite-body">
+<body>
 
-    <!-- 夜空 -->
     <div class="sky" aria-hidden="true"></div>
     <div class="moon" aria-hidden="true"></div>
 
-    <!-- 角落藤蔓 -->
     <svg class="vine vine-tl" viewBox="0 0 220 220" aria-hidden="true">
         <path d="M6 8 C 50 18, 38 66, 84 78 C 122 88, 118 128, 158 140 C 184 148, 196 168, 208 196"/>
         <ellipse class="leaf" cx="44" cy="30" rx="7" ry="3.2" transform="rotate(28 44 30)"/>
@@ -35,7 +33,6 @@
         <circle cx="158" cy="140" r="2"/>
     </svg>
 
-    <!-- 山脚剪影：松林与一只看月亮的猫 -->
     <svg class="hills" viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
         <g fill="#101015" stroke="rgba(245,242,234,0.22)" stroke-width="1.5">
             <ellipse cx="260" cy="300" rx="380" ry="150"/>
@@ -71,24 +68,36 @@
         </g>
     </svg>
 
-    <!-- 舞台 -->
-    <main class="stage">
-        <div class="portrait-frame">
-            <img src="assets/nilo-cat-bw.png" alt="nilo 的猫画像">
+    <main class="page">
+        <header class="page-head">
+            <a class="back-link" href="index.html">✦ 返回扉页</a>
+            <h1 class="page-title" data-draw="如何联系我">如何联系我</h1>
+            <p class="page-sub">给森林深处的小屋寄一封信</p>
+        </header>
+
+        <div class="card postcard rise">
+            <div class="stamp">
+                <span class="cat">🐈‍⬛</span>
+                <span>童话邮局<br>黑白特快</span>
+            </div>
+
+            <p class="dear">亲爱的来访者：</p>
+            <p class="letter">
+                想聊聊代码、学业、一只猫，或者只是路过打个招呼——
+                都可以从下面任意一个地址找到我。
+            </p>
+
+            <hr class="tear">
+
+            <ul class="contact-list">
+                <li><span class="k">QQ</span><span>2831055732</span></li>
+                <li><span class="k">电话</span><span>13409788653</span></li>
+                <li><span class="k">邮箱</span><a href="mailto:2831055732@qq.com">2831055732@qq.com</a></li>
+                <li><span class="k">微信</span><span>l801130070130</span></li>
+            </ul>
+
+            <p class="seal">来信必回 <b>nilo<br>印</b></p>
         </div>
-
-        <div class="invitation">
-            <div class="invite-line" id="line1"></div>
-            <div class="invite-line" id="line2"></div>
-        </div>
-
-        <p class="invite-hint" id="hint">❧ 夜色正好 · 请推开一扇门 ❧</p>
-
-        <nav class="gate" id="gate">
-            <a class="btn" href="portfolio.html">我的作品集</a>
-            <a class="btn" href="path.html">我的学习路径</a>
-            <a class="btn" href="contact.html">如何联系我</a>
-        </nav>
     </main>
 
     <footer>
@@ -99,6 +108,5 @@
     <div class="grain" aria-hidden="true"></div>
 
     <script src="js/fairytale.js"></script>
-    <script src="js/invite.js"></script>
 </body>
 </html>
